@@ -44,5 +44,4 @@ partial def analyzeGoldenDualism (upper : Nat) : (Float × Float) :=
 
 -- 4. THE EXECUTION
 -- This will return (RS, RL). 
--- Watch how they interact to form your Golden Constant.
 #eval! analyzeGoldenDualism 1000
