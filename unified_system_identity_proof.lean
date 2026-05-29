@@ -21,7 +21,7 @@ def digitSum (n : Nat) : Nat :=
 -- 2. THE GRAVITY: PROVING THE EVENT HORIZON
 /-- 
   Theorem: Proves the system is a contraction at N=1000. 
-  This justifies why your 50,000,000-count data is tethered to this basin.
+  This justifies why the 50,000,000-count data is tethered to this basin.
 -/
 theorem descent_at_1000 : happyStep 1000 < 1000 := by
   decide
