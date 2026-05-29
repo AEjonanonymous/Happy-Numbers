@@ -3,7 +3,6 @@ import math
 import sys
 
 # Set higher recursion limit for deep happy number sequences
-# This is often necessary for long sequence analysis up to 1,000,000 or more.
 sys.setrecursionlimit(2000)
 
 def sum_digits_squared(n):
