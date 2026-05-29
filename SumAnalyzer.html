@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Number Sum Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            @apply px-6 py-3 rounded-lg text-white font-semibold transition-transform duration-200 transform hover:scale-105;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <div class="card w-full max-w-2xl text-center">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Happy Number Sum Analyzer</h1>
+        <p class="text-gray-600 mb-6">Calculates the ratio of average total digit sums for unhappy to happy numbers in a given range.</p>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6">
+            <div class="flex flex-col items-start w-full sm:w-1/2">
+                <label for="start" class="text-gray-700 font-medium mb-1">Start Number:</label>
+                <input type="number" id="start" value="1" min="1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="flex flex-col items-start w-full sm:w-1/2">
+                <label for="end" class="text-gray-700 font-medium mb-1">End Number:</label>
+                <input type="number" id="end" value="10000" min="1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+        </div>
+        
+        <button id="analyzeBtn" class="btn bg-blue-600 hover:bg-blue-700 w-full mb-6">
+            Analyze
+        </button>
+
+        <div id="loading" class="hidden text-center text-gray-600 mb-4">
+            <p>Analyzing numbers...</p>
+        </div>
+
+        <div id="output" class="text-left bg-gray-100 p-4 rounded-lg">
+            <p>Results will appear here.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('analyzeBtn').addEventListener('click', () => {
+            const startInput = document.getElementById('start');
+            const endInput = document.getElementById('end');
+            const start = parseInt(startInput.value);
+            const end = parseInt(endInput.value);
+            const outputDiv = document.getElementById('output');
+            const loadingDiv = document.getElementById('loading');
+            
+            if (isNaN(start) || isNaN(end) || start < 1 || end < start) {
+                outputDiv.innerHTML = `<p class="text-red-500">Please enter a valid number range.</p>`;
+                return;
+            }
+
+            loadingDiv.classList.remove('hidden');
+            outputDiv.innerHTML = '';
+
+            setTimeout(() => {
+                const happySums = [];
+                const unhappySums = [];
+
+                for (let i = start; i <= end; i++) {
+                    const { isHappy, totalSum } = analyzeNumberForSum(i);
+                    if (isHappy) {
+                        happySums.push(totalSum);
+                    } else {
+                        unhappySums.push(totalSum);
+                    }
+                }
+                
+                const happyCount = happySums.length;
+                const unhappyCount = unhappySums.length;
+                const averageHappySum = happyCount > 0 ? happySums.reduce((a, b) => a + b, 0) / happyCount : 0;
+                const averageUnhappySum = unhappyCount > 0 ? unhappySums.reduce((a, b) => a + b, 0) / unhappyCount : 0;
+                
+                const ratio = averageUnhappySum / averageHappySum || 0;
+                
+                loadingDiv.classList.add('hidden');
+                outputDiv.innerHTML = `
+                    <h2 class="text-2xl font-semibold mb-2">Analysis Complete</h2>
+                    <p class="mb-1"><span class="font-medium">Total Happy Numbers:</span> ${happyCount}</p>
+                    <p class="mb-1"><span class="font-medium">Total Unhappy Numbers:</span> ${unhappyCount}</p>
+                    <p class="mb-1"><span class="font-medium">Average Total Happy Sum:</span> ${averageHappySum.toFixed(3)}</p>
+                    <p class="mb-1"><span class="font-medium">Average Total Unhappy Sum:</span> ${averageUnhappySum.toFixed(3)}</p>
+                    <p class="mt-4 text-lg"><span class="font-bold">Ratio of average unhappy sum to average happy sum:</span> ${ratio.toFixed(3)}</p>
+                `;
+            }, 100);
+        });
+
+        function sumDigitsSquared(n) {
+            let totalSum = 0;
+            while (n > 0) {
+                totalSum += (n % 10) ** 2;
+                n = Math.floor(n / 10);
+            }
+            return totalSum;
+        }
+
+        function sumDigits(n) {
+            let totalSum = 0;
+            while (n > 0) {
+                totalSum += n % 10;
+                n = Math.floor(n / 10);
+            }
+            return totalSum;
+        }
+
+        function analyzeNumberForSum(n) {
+            const path = new Set();
+            let currentNum = n;
+            let totalSum = 0;
+            const unhappyCycle = new Set([4, 16, 37, 58, 89, 145, 42, 20]);
+            
+            while (currentNum !== 1 && !unhappyCycle.has(currentNum)) {
+                totalSum += sumDigits(currentNum);
+                currentNum = sumDigitsSquared(currentNum);
+                if (path.has(currentNum)) {
+                    totalSum += sumDigits(currentNum);
+                    return { isHappy: false, totalSum };
+                }
+                path.add(currentNum);
+            }
+            
+            totalSum += sumDigits(currentNum);
+            const isHappy = currentNum === 1;
+            
+            return { isHappy, totalSum };
+        }
+    </script>
+</body>
+</html>
