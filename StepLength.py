@@ -11,8 +11,6 @@ def sum_digits_squared(n):
 def analyze_number(n):
     """
     Analyzes a number to determine if it's happy or unhappy and returns the sequence length.
-    
-    This version does not count the final step. The sum_digits function is not used.
     """
     path = {n}
     sequence_length = 0
