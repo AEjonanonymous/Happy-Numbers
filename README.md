@@ -1,6 +1,6 @@
 # <div align="center"> The Golden Ratio's Footprint in Happy Number Sequences 
 
-## <div align="center">🙂 Overview 🙂
+## <div align="center">🙂 Overview 🔍
 📌 This repository hosts the computational framework and formal proofs supporting the manuscript: **📝 The Golden Ratio's Footprint in Happy Number Sequences.pdf** Our research proves that the behavior of happy and unhappy numbers is not random, but governed by a unified system where digit-sum structural costs ($R_S$) and sequential lengths ($R_L$) converge to an algebraic equilibrium tied to the Golden Ratio ($\phi$).
 
 ## 💻 Empirical Models & Web Applications
