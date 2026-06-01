@@ -23,7 +23,7 @@ $$R_S + R_L = \phi^2 \approx 2.618$$
 
 ### 🗜️ The Principle of Modular Compression
 
-"We define the Length Factor ($\lambda_A$) as the ratio of the system's fundamental attractor length ($L=8$) to its modular stability threshold ($M=4$). This quotient ($\lambda_A = 2$) represents the functional compression of information within the Base-10 engine, serving as the bridge between discrete arithmetic and continuous geometry."
+We define the Length Factor ($\lambda_A$) as the ratio of the system's fundamental attractor length ($L=8$) to its modular stability threshold ($M=4$). This quotient ($\lambda_A = 2$) represents the functional compression of information within the Base-10 engine, serving as the bridge between discrete arithmetic and continuous geometry.
 
 When the math is laid out line-by-line, you can see that the $1/7$ isn't just a number—it's a sum of constraints:
 
