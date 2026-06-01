@@ -28,7 +28,18 @@ We observe a confluence where the iteration process intersects with the geometri
 $$\frac{R_S}{\phi^2} \approx \frac{\pi}{6} \approx 0.524$$
 
 ### 🕳️ The Base-10 Singularity 
-We identify the Base-10 number system as a unique **Geometric Singularity**. While sequence behaviors in other bases follow general conservation principles, the Base-10 system achieves an algebraic equilibrium where the sum of its structural and sequential ratios is exactly $\phi^2$. This demonstrates that the Base-10 iteration process is inherently constrained by the geometric properties of the Golden Ratio.
+We identify the Base-10 number system as a unique **Geometric Singularity**. This is proven by the failure of geometric cancellation due to the complex Base-10 structure:
+
+$$F(10) = \underbrace{(C_{A,10} - \lambda_{G,10})}_{\text{Ratio of Sums, } R_S} + \underbrace{(\lambda_{A,10} \cdot \lambda_{G,10})}_{\text{Ratio of Lengths, } R_L}$$
+$$F(10) = \left(3 - \frac{1}{\phi}\right) + \left(2 \cdot \frac{1}{\phi}\right)$$
+$$F(10) = 3 + \frac{1}{\phi} = 3 + (\phi - 1) = 2 + \phi = \phi^2$$
+
+While sequence behaviors in other bases follow general conservation principles, the Base-10 system achieves an algebraic equilibrium where the sum of its structural and sequential ratios is exactly $\phi^2$. This demonstrates that the Base-10 iteration process is inherently constrained by the geometric properties of the Golden Ratio. The theorem is bounded by the following generalized, piecewise identity:
+
+$$F(B) = \begin{cases} 0 & \text{if } B \le 2 \\
+C_A & \text{if } 3 \le B \le 9 \\
+\phi^2 & \text{if } B = 10 \end{cases}$$
+
 
 ---
 
@@ -49,6 +60,7 @@ The identity $R_S + R_L = \phi^2$ is derived from the decomposition of the syste
 **Proof of Identity:**
 Substituting these constants:
 
+$$R_S + R_L = \phi^2$$
 $$(C_A - \lambda_G) + (\lambda_A \cdot \lambda_G) = \phi^2$$
 $$(3 - \frac{1}{\phi}) + (2 \cdot \frac{1}{\phi}) = \phi^2$$
 
