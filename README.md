@@ -35,7 +35,7 @@ We identify the Base-10 number system as a unique **Geometric Singularity**. Whi
 ## ✅ Formal Verification in Lean 4
 This repository includes a formal verification suite that bridges empirical observation with mathematical necessity. The file `StepAnalyzer_SumAnalyzer.lean` is central to this work; it defines in Lean the digit-sum engine and metrics used to verify that the logic in our Lean proofs is consistent with the logic in our Python models and web applications.
 - **Verification of Contraction:** `basin_is_bounded.lean` proves the system is a contraction mapping with a finite attractor basin.
-- **Attractor Density:** `basin_density.lean` provides a formal kernel-verified calculation of the global attractor density 1/7.
+- **Attractor Density:** `basin_density.lean` provides a formal kernel-verified calculation of the global attractor density (1/7).
 - **Identity Proof:** `unified_system_identity_proof.lean` utilizes the Lean 4 tactic engine to close the goal for the identity $R_S + R_L = \phi^2$, proving these ratios are the unique algebraic equilibrium of the system.
 
 ---
@@ -63,6 +63,6 @@ $$2 + \phi = \phi^2$$
 This confirms the fundamental algebraic signature of the system.
 
 ---
-## ⚖️ [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+## ⚖️ [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/) [![Lean 4 Verified](https://img.shields.io/badge/Lean-4-blue.svg)](https://lean-lang.org/)
 
-**Copyright © 2026 Jonathan Alan Reed.** 
+**Copyright © 2026 Jonathan $f(n)$ Reed.** 
