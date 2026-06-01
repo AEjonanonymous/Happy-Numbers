@@ -1,7 +1,7 @@
-# <div align="center">🙂 The Golden Ratio's Footprint in Happy Number Sequences 
+# <div align="center"> The Golden Ratio's Footprint in Happy Number Sequences 
 
-## <div align="center">📌 Overview
-This repository hosts the computational framework and formal proofs supporting the manuscript 📝: **The Golden Ratio's Footprint in Happy Number Sequences.pdf"** Our research proves that the behavior of happy and unhappy numbers is not random, but governed by a unified system where digit-sum structural costs ($R_S$) and sequential lengths ($R_L$) converge to an algebraic equilibrium tied to the Golden Ratio ($\phi$).
+## <div align="center">🙂 Overview 👣
+📌 This repository hosts the computational framework and formal proofs supporting the manuscript: **📝 The Golden Ratio's Footprint in Happy Number Sequences.pdf** Our research proves that the behavior of happy and unhappy numbers is not random, but governed by a unified system where digit-sum structural costs ($R_S$) and sequential lengths ($R_L$) converge to an algebraic equilibrium tied to the Golden Ratio ($\phi$).
 
 ## 💻 Empirical Models & Web Applications
 We modeled the digit-sum engine using custom Python scripts and web-based utilities to analyze 50,000,000 integers. These tools calculate the Total Digit Sum ($\Sigma_D$) and Sequence Length ($L_S$) to observe the emergent convergence of $R_S$ and $R_L$.
@@ -75,6 +75,6 @@ $$2 + \phi = \phi^2$$
 This confirms the fundamental algebraic signature of the system.
 
 ---
-## ⚖️ [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/) [![Lean 4 Verified](https://img.shields.io/badge/Lean-4-blue.svg)](https://lean-lang.org/)
+## ⚖️ [![Computational Number Theory](https://img.shields.io/badge/Field-Computational_Number_Theory-2e6b9e.svg)](https://shields.io/) [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/) [![Lean 4 Verified](https://img.shields.io/badge/Lean-4-blue.svg)](https://lean-lang.org/)
 
 **Copyright © 2026 Jonathan $f(n)$ Reed.** 
