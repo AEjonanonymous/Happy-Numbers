@@ -77,4 +77,6 @@ This confirms the fundamental algebraic signature of the system.
 ---
 ## ⚖️ [![Computational Number Theory](https://img.shields.io/badge/Field-Computational_Number_Theory-2e6b9e.svg)](https://shields.io/) [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/) [![Lean 4 Verified](https://img.shields.io/badge/Lean-4-blue.svg)](https://lean-lang.org/)
 
+Reed, J. (2026). The Golden Ratio's Footprint in Happy Number Sequences (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.20450624
+
 **Copyright © 2026 Jonathan $f(n)$ Reed.** 
