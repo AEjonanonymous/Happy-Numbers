@@ -1,7 +1,7 @@
 # <div align="center">🙂 The Golden Ratio's Footprint in Happy Number Sequences 
 
 ## <div align="center">📌 Overview
-This repository hosts the computational framework and formal proofs supporting the manuscript: **"The Golden Ratio's Footprint in Happy Number Sequences."** Our research proves that the behavior of happy and unhappy numbers is not random, but governed by a unified system where digit-sum structural costs ($R_S$) and sequential lengths ($R_L$) converge to an algebraic equilibrium tied to the Golden Ratio ($\phi$).
+This repository hosts the computational framework and formal proofs supporting the manuscript 📝: **The Golden Ratio's Footprint in Happy Number Sequences.pdf"** Our research proves that the behavior of happy and unhappy numbers is not random, but governed by a unified system where digit-sum structural costs ($R_S$) and sequential lengths ($R_L$) converge to an algebraic equilibrium tied to the Golden Ratio ($\phi$).
 
 ## 💻 Empirical Models & Web Applications
 We modeled the digit-sum engine using custom Python scripts and web-based utilities to analyze 50,000,000 integers. These tools calculate the Total Digit Sum ($\Sigma_D$) and Sequence Length ($L_S$) to observe the emergent convergence of $R_S$ and $R_L$.
@@ -12,22 +12,22 @@ We modeled the digit-sum engine using custom Python scripts and web-based utilit
 ## 🗝️ Key Findings & Equations
 Our research identifies the Base-10 number system as a unique **Geometric Singularity** where the system’s iterative path reaches an algebraic equilibrium of $\phi^2$.
 
-###  1. The Unified System Identity $\phi^2$ 
+### $\phi^2$ The Unified System Identity 
 The structural metrics are coupled via the Golden Ratio ($\phi \approx 1.618$):
 
 $$R_S + R_L = \phi^2 \approx 2.618$$
 
-### 2. Asymptotic Convergence Constants 👣
+### 👣 Asymptotic Convergence Constants 
 The individual ratios converge to exact constants defined by the Base-10 structure:
 - **Structural Ratio ($R_S$):** $R_S \rightarrow 3 - \phi \approx 1.382$
 - **Sequential Ratio ($R_L$):** $R_L \rightarrow \frac{2}{\phi} \approx 1.236$
 
-### 3. Geometric Confluence ⊡
+### ⊡ Geometric Confluence 
 We observe a confluence where the iteration process intersects with the geometric constant $\pi$:
 
 $$\frac{R_S}{\phi^2} \approx \frac{\pi}{6} \approx 0.524$$
 
-### 4. The Base-10 Singularity 🕳️
+### 🕳️ The Base-10 Singularity 
 We identify the Base-10 number system as a unique **Geometric Singularity**. While sequence behaviors in other bases follow general conservation principles, the Base-10 system achieves an algebraic equilibrium where the sum of its structural and sequential ratios is exactly $\phi^2$. This demonstrates that the Base-10 iteration process is inherently constrained by the geometric properties of the Golden Ratio.
 
 ---
