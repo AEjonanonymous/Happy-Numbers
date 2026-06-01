@@ -17,7 +17,7 @@ The structural metrics are coupled via the Golden Ratio ($\phi \approx 1.618$):
 
 $$R_S + R_L = \phi^2 \approx 2.618$$
 
-### 👣 Asymptotic Convergence Constants 
+### 📉 Asymptotic Convergence Constants 
 The individual ratios converge to exact constants defined by the Base-10 structure:
 - **Structural Ratio ($R_S$):** $R_S \rightarrow 3 - \phi \approx 1.382$
 - **Sequential Ratio ($R_L$):** $R_L \rightarrow \frac{2}{\phi} \approx 1.236$
