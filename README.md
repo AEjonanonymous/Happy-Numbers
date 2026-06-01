@@ -1,6 +1,6 @@
 # <div align="center"> The Golden Ratio's Footprint in Happy Number Sequences 
 
-## <div align="center">🙂 Overview 👣
+## <div align="center">🙂 Overview 🙂
 📌 This repository hosts the computational framework and formal proofs supporting the manuscript: **📝 The Golden Ratio's Footprint in Happy Number Sequences.pdf** Our research proves that the behavior of happy and unhappy numbers is not random, but governed by a unified system where digit-sum structural costs ($R_S$) and sequential lengths ($R_L$) converge to an algebraic equilibrium tied to the Golden Ratio ($\phi$).
 
 ## 💻 Empirical Models & Web Applications
@@ -11,15 +11,15 @@ We modeled the digit-sum engine using custom Python scripts and web-based utilit
 ## 🗝️ Key Findings & Equations
 Our research identifies the Base-10 number system as a unique **Geometric Singularity** where the system’s iterative path reaches an algebraic equilibrium of $\phi^2$.
 
+### 👣 Asymptotic Convergence Constants 
+The individual ratios converge to exact constants defined by the Base-10 structure:
+- **Structural Ratio ($R_S$):** $R_S \rightarrow 3 - \phi \approx 1.382$
+- **Sequential Ratio ($R_L$):** $R_L \rightarrow \frac{2}{\phi} \approx 1.236$
+
 ### $\phi^2$ The Unified System Identity 
 The structural metrics are coupled via the Golden Ratio ($\phi \approx 1.618$):
 
 $$R_S + R_L = \phi^2 \approx 2.618$$
-
-### 📉 Asymptotic Convergence Constants 
-The individual ratios converge to exact constants defined by the Base-10 structure:
-- **Structural Ratio ($R_S$):** $R_S \rightarrow 3 - \phi \approx 1.382$
-- **Sequential Ratio ($R_L$):** $R_L \rightarrow \frac{2}{\phi} \approx 1.236$
 
 ### 🗜️ The Principle of Modular Compression
 
