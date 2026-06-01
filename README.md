@@ -8,7 +8,6 @@ We modeled the digit-sum engine using custom Python scripts and web-based utilit
 - **Python Scripts:** `happy_number_sum.py`, `happy_number_step.py`
 - **Web Applications:** `SumAnalyzer.html`, `StepAnalyzer.html`
 
-
 ## 🗝️ Key Findings & Equations
 Our research identifies the Base-10 number system as a unique **Geometric Singularity** where the system’s iterative path reaches an algebraic equilibrium of $\phi^2$.
 
@@ -49,6 +48,8 @@ We observe a confluence where the iteration process intersects with the geometri
 
 $$\frac{R_S}{\phi^2} \approx \frac{\pi}{6} \approx 0.524$$
 
+![The Geometrization of Happy Numbers Blueprint](Gemini_Generated_Image_5nxbub5nxbub5nxb.png)
+
 ### 🕳️ The Base-10 Singularity 
 We identify the Base-10 number system as a unique **Geometric Singularity**. This is proven by the failure of geometric cancellation due to the complex Base-10 structure:
 
@@ -61,7 +62,6 @@ While sequence behaviors in other bases follow general conservation principles, 
 $$F(B) = \begin{cases} 0 & \text{if } B \le 2 \\
 C_A & \text{if } 3 \le B \le 9 \\
 \phi^2 & \text{if } B = 10 \end{cases}$$
-
 
 ---
 
