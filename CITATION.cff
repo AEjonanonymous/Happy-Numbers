@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite this research as follows."
+authors:
+  - name: "Jonathan ƒ(n)"
+title: "The Golden Ratio's Footprint in Happy Number Sequences"
+version: 1.0.0
+doi: 10.5281/zenodo.20450624
+date-released: 2026-06-01
